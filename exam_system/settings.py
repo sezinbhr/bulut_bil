@@ -78,17 +78,10 @@ WSGI_APPLICATION = 'exam_system.wsgi.application'
 
 DATABASES = {
     'default': {
-                
-            'ENGINE': 'sql_server.pyodbc',
-            'HOST': 'baharsezinpostgres21.postgres.database.azure.com',
-            'NAME': 'postgres',
-            'PORT': '1433',
-            'USER': 'usrbhrszn',
-            'PASSWORD': 'Alleranfang*23',
-            'OPTIONS':{
-                'driver': 'FreeTDS',
-                'host_is_server': True,
-            },
+             
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+            }
     }
 
 # Password validation
