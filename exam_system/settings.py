@@ -76,11 +76,11 @@ WSGI_APPLICATION = 'exam_system.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-import dj_database_url, psycopg2
+import dj_database_url
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',                      
         'USER':'usrbhrszn',
         'PASSWORD': 'Alleranfang*23',
