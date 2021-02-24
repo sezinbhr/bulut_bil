@@ -84,11 +84,10 @@ DATABASES = {
         'PASSWORD': 'Alleranfang*23',
         'HOST': 'baharsezinpostgres21.postgres.database.azure.com',
         'PORT': '5432',
-        'OPTIONS':{
-                'driver': 'FreeTDS',
-                'host_is_server': True,
-        
-    }
+        'OPTIONS': {
+            'driver': 'ODBC Driver 13 for SQL Server',
+        },
+    },
 }
 
 
