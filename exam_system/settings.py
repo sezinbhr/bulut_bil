@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'exam_system.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'sql_server.pyodbc',
         'NAME': 'postgres',
         'USER': 'usrbhrszn',
         'PASSWORD': 'Alleranfang*23',
