@@ -88,7 +88,7 @@ DATABASES = {
             'OPTIONS':{
                 'driver': 'FreeTDS',
                 'host_is_server': True,
-            }
+            },
     }
 
 # Password validation
