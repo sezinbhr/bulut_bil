@@ -77,7 +77,6 @@ WSGI_APPLICATION = 'exam_system.wsgi.application'
 
 DATABASES = {
     'default': {
-        default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
         'USER': 'usrbhrszn',
@@ -85,7 +84,7 @@ DATABASES = {
         'HOST': 'baharsezinpostgres21.postgres.database.azure.com',
         'PORT': '5432',
         'OPTIONS': {'sslmode': 'require'},
-        }
+        
     }
 }
 
