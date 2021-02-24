@@ -81,9 +81,11 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'usrbhrszn',
         'PASSWORD': 'Alleranfang*23',
-        'HOST': 'baharsezinpostgres21.postgres.database.azure.com',
-        'PORT': '5432',
-        'sslmode': 'require',
+        'HOST': '127.0.0.1',
+        'PORT': '1433',
+        'OPTIONS':{
+                'driver': 'FreeTDS',
+                'host_is_server': True,
         
     }
 }
