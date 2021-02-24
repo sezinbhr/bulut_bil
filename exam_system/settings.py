@@ -25,7 +25,7 @@ SECRET_KEY = '75+b&b2!k&0=lge2-qew0coiyu5!vx4w+o=&j_y2##gch5g1(x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['djangoexamapp.azurewebsites.net']
 
 
 # Application definition
@@ -78,20 +78,15 @@ WSGI_APPLICATION = 'exam_system.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'postgres',
-        'USER': 'usrbhrszn',
-        'PASSWORD': 'Alleranfang*23',
-        'HOST': 'baharsezinpostgres21.postgres.database.azure.com',
-        'PORT': '1433',
+                'ENGINE': 'django.db.backends.postgresql_psycopg2',
+                'NAME': os.environ.get('DATABASENAME', 'postgres'),
+                'USER': os.environ.get('DATABASEUSER', 'usrbhrszn'),
+                'PASSWORD': os.environ.get('DATABASEPASSWORD', 'Alleranfang*23'),
+                'HOST': os.environ.get('DATABASEHOST', 'baharsezinpostgres21.postgres.database.azure.com'),
+                'PORT': '5432',
+                },
 
-        'OPTIONS': {
-            'driver': 'ODBC Driver 17 for SQL Server',
-        
-        },
-
-    },
-}
+          }
 
 
 # Password validation
