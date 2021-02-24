@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites',
+    
 ]
 
 MIDDLEWARE = [
@@ -83,7 +83,7 @@ DATABASES = {
         'USER': 'usrbhrszn',
         'PASSWORD': 'Alleranfang*23',
         'HOST': 'baharsezinpostgres21.postgres.database.azure.com',
-        'PORT': '8000',
+        'PORT': '5432',
         'OPTIONS':{
                 'driver': 'FreeTDS',
                 'host_is_server': True,
