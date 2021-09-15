@@ -2,7 +2,7 @@
 
 This repository created for online examination system. It was written by Django Framework.
 
-## How does it works?
+## How does it work?
 
 Basically this system provides to take the exams online. There is an admin panel and only instructors can login to the panel. 
 Instructors can upload questions/answers and set the date/time of the exam, via this panel. In addition, the instructor can assign students to exams.
